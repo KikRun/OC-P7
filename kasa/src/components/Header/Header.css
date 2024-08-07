@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  background-color: #FFF;
+  font-size: 30px;
+  max-width: 1240px;
+  width: 80%;
+  margin: 0 auto 20px;
+  padding-top: 20px;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  .header {
+    width: 90%;
+    margin: auto auto 20px;
+  }
+}
+.header img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 55px;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  .header img {
+    height: 46px;
+  }
+}
+.header .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  color: #000;
+  text-decoration: none;
+}
+.header .nav a {
+  gap: 60px;
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+  margin-left: 20px;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  .header .nav a {
+    gap: 20px;
+    font-size: 12px;
+  }
+}
+.header .nav a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=Header.css.map */

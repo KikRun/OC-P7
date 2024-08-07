@@ -1,0 +1,140 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1240px;
+  margin: 0 auto;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (min-width: 890px) {
+  main {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+main .top-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-size: 48px;
+  margin-top: -220px;
+  background-color: rgba(0, 0, 0, 0.3764705882);
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  main .top-title {
+    flex-direction: column;
+    height: 110px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: -110px;
+  }
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #F6F6F6;
+  margin-top: 20px;
+  max-width: 1240px;
+  height: 760px;
+  max-width: 1240px;
+  border-radius: 30px;
+  overflow: hidden;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  .main-container {
+    height: 100%;
+    width: 100%;
+    background-color: #FFF;
+  }
+}
+.main-container .main-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: 30px;
+  background-color: #FF6060;
+  color: #FFF;
+  border-radius: 10px;
+  margin: 20px;
+  height: 340px;
+  width: 340px;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  .main-container .main-card {
+    width: 100%;
+    height: 255px;
+    margin: 0 0 20px;
+  }
+}
+.main-container .main-card a {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 24px;
+  width: 100%;
+  height: 100%;
+}
+.main-container .main-card a h6 {
+  position: relative;
+  display: flex;
+  flex-direction: flex-end;
+  align-items: flex-end;
+  overflow: visible;
+  width: 100px;
+  margin-right: -100px;
+  left: 20px;
+  bottom: -20px;
+}
+.main-container .main-card a img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 340px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}/*# sourceMappingURL=Home.css.map */

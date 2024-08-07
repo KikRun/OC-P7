@@ -1,0 +1,111 @@
+@import "../../style/_responsive"
+
+$main-color: #FF6060
+$black-color: #000
+$black-opacity: #00000060
+$white-color: #FFF
+$light-grey: #F6F6F6
+
+$top-container-height: 220px
+$top-container-border-radius: 30px
+$max-width: 90%
+$regular-width: 80%
+
+main
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    max-width: 1240px
+    margin: 0 auto
+    @include responsive('desktop')
+        width: $regular-width
+
+    @include responsive('smartphone')
+        width: $max-width
+        margin: 0 auto
+
+    .top-title
+        display: flex
+        align-items: center
+        justify-content: center
+        color: $white-color
+        font-size: 48px
+        margin-top: -$top-container-height
+        background-color: $black-opacity
+        width: 100%
+        height: 100%
+        border-radius: $top-container-border-radius
+        @include responsive('smartphone')
+            flex-direction: column
+            height: calc($top-container-height/2)
+            font-size: 24px
+            font-weight: 700
+            margin-top: calc(-1*$top-container-height/2)
+
+.main-container
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row
+    flex-wrap: wrap
+    background-color: $light-grey
+    margin-top: 20px
+    max-width: 1240px
+    height: 760px
+    max-width: 1240px
+    border-radius: 30px
+    overflow: hidden
+    @include responsive('smartphone')
+        height: 100%
+        width: 100%
+        background-color: $white-color
+
+    .main-card
+        display: flex
+        flex-direction: row
+        align-items: flex-end
+        justify-content: flex-start
+        font-size: 30px
+        background-color: $main-color
+        color: $white-color
+        border-radius: 10px
+        margin: 20px
+        height: 340px
+        width: 340px
+        @include responsive('smartphone')
+            width: 100%
+            height: 255px
+            margin: 0 0 20px
+
+        a
+            display: flex
+            position: relative
+            flex-direction: row
+            justify-content: center
+            align-content: center
+            text-decoration: none
+            color: $white-color
+            font-size: 24px
+            width: 100%
+            height: 100%
+
+            h6
+                position: relative
+                display: flex
+                flex-direction: flex-end
+                align-items: flex-end
+                overflow: visible
+                width: 100px
+                margin-right: -100px
+                left: 20px
+                bottom: -20px
+
+            img
+                display: flex
+                justify-content: center
+                align-items: center
+                max-height: 340px
+                width: 100%
+                object-fit: cover
+                border-radius: 10px

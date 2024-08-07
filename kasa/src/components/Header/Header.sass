@@ -1,0 +1,54 @@
+@import "../../style/_responsive"
+
+$main-color: #FF6060
+$black-color: #000
+$white-color: #FFF
+
+.header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    color: black
+    background-color: $white-color
+    font-size: 30px
+    max-width: 1240px
+    width: 80%
+    margin: 0 auto 20px
+    padding-top: 20px
+
+    @include responsive('smartphone')
+        width: 90%
+        margin: auto auto 20px
+
+    img
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        height: 55px
+
+        @include responsive('smartphone')
+            height: 46px
+
+    .nav
+        display: flex
+        flex-direction: row
+        justify-content: flex-end
+        align-items: center
+        width: 100%
+        color: $black-color
+        text-decoration: none
+
+        a
+            gap: 60px
+            color: $black-color
+            text-decoration: none
+            font-size: 24px
+            margin-left: 20px
+
+            @include responsive('smartphone')
+                gap: 20px
+                font-size: 12px
+
+            &:hover
+                text-decoration: underline

@@ -1,0 +1,48 @@
+.image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 415px;
+  max-width: 1240px;
+  width: 100%;
+  margin: auto;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  .image_container {
+    height: 255px;
+  }
+}
+.image_container img {
+  position: relative;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+.image_container svg {
+  font-size: 80px;
+  color: white;
+  z-index: 1;
+}
+.image_container .fa-chevron-left {
+  margin-right: -80px;
+}
+.image_container .fa-chevron-right {
+  margin-left: -80px;
+}
+.image_container p {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  width: 50%;
+  margin-left: -50%;
+  bottom: 20px;
+  color: #FFF;
+}/*# sourceMappingURL=Banner.css.map */

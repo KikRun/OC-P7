@@ -1,0 +1,20 @@
+h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 36px;
+  min-height: 51px;
+  font-weight: 200;
+  color: #FF6060;
+  margin-bottom: 0px;
+  margin-top: 0;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  h2 {
+    max-height: 46px;
+  }
+}/*# sourceMappingURL=TitlesAccommodation.css.map */

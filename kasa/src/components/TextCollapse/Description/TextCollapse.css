@@ -1,0 +1,79 @@
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 20px;
+  color: #FFF;
+  z-index: 1;
+  rotate: 180deg;
+  transition: all 200ms;
+  margin-right: 10px;
+}
+.arrow.open {
+  rotate: 0deg;
+}
+
+.description {
+  width: 100%;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6060;
+  border-radius: 10px;
+  color: #FFF;
+  z-index: 1;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  .head {
+    height: 30px;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  h3 {
+    font-size: 13px;
+  }
+}
+
+ul {
+  padding: 20px 10px 0;
+  opacity: 1;
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgba(246, 246, 246, 0.4509803922);
+  max-height: 300px;
+  height: 0;
+  opacity: 0;
+}
+.content.open {
+  height: 100%;
+  opacity: 1;
+}
+
+.open {
+  transition: all 200ms;
+}/*# sourceMappingURL=TextCollapse.css.map */

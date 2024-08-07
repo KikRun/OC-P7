@@ -1,0 +1,64 @@
+.top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1240px;
+  height: 220px;
+  border-radius: 30px;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  .top-container {
+    height: 110px;
+    border-radius: 10px;
+  }
+}
+.top-container .top-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  .top-container .top-image {
+    height: 110px;
+  }
+}
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  gap: 30px;
+}
+.text_container h3 {
+  padding-left: 10px;
+  font-size: 18px;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  .text_container h3 {
+    font-size: 13px;
+  }
+}
+.text_container p {
+  padding-left: 10px;
+}/*# sourceMappingURL=APropos.css.map */

@@ -1,0 +1,34 @@
+@import "../../style/_responsive"
+
+$main-color: #FF6060
+$black-color: #000
+$white-color: #FFF
+
+.footer
+    display: flex
+    position: relative
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background-color: $black-color
+    height: 210px
+    width: 100%
+    margin-top: 20px
+    bottom: 0
+    @include responsive('smartphone')
+        max-height: 210px
+
+    img
+        color: $white-color
+        font-size: 40px
+        height: 50px
+        @include responsive('smartphone')
+            max-width: 122px
+
+    p
+        color: $white-color
+        font-size: 24px
+        margin-bottom: 0
+        @include responsive('smartphone')
+            font-size: 12px
+            height: 46px

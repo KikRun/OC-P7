@@ -1,0 +1,47 @@
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 0 20px;
+  padding: 0;
+}
+.user img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  width: 64px;
+  border-radius: 40px;
+  margin-top: 15px;
+  padding: 0;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  .user img {
+    height: 32px;
+    width: 32px;
+    margin: 0;
+  }
+}
+.user h5 {
+  color: #FF6060;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  .user h5 {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=UserAccommodation.css.map */

@@ -1,0 +1,30 @@
+@import "../../../style/_responsive"
+
+$main-color: #FF6060
+$black-color: #000
+$white-color: #FFF
+
+.category_container
+    flex-direction: row
+    display: flex
+    gap: 20px
+    margin: 10px 0 24px
+    @include responsive('smartphone')
+        gap: 10px
+
+    h4
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+        padding: 0 10px 0
+        margin: 0
+        font-size: 14px
+        background-color: $main-color
+        color: $white-color
+        border-radius: 25px
+        width: 115px
+        height: 25px
+        @include responsive('smartphone')
+            width: 85px
+            font-size: 10px

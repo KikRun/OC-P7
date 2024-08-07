@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./style/App.css";
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home.jsx";
+import Header from "./components/Header/Header.jsx";
+import "./components/Header/Header.sass";
+import Footer from "./components/Footer/Footer.jsx";
+import "./components/Footer/Footer.css";
+import Accommodation from "./pages/Accommodation/Accommodation.jsx";
+import APropos from "./pages/APropos/APropos.jsx";
+import NotFound from "./pages/404/NotFound.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Router>
+        <Routes>
+          <Route path={"/"} element={<Home />} />
+          <Route path={`/Accommodation/:id`} element={<Accommodation />} />
+          <Route path={"/*"} element={<NotFound />} />
+          <Route path={"/a-propos"} element={<APropos />} />
+        </Routes>
+      </Router>
+      <Footer />
+    </>
   );
 }
 

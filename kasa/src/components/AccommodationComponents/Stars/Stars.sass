@@ -1,0 +1,24 @@
+@import "../../../style/_responsive"
+
+$main-color: #FF6060
+$black-color: #000
+$white-color: #FFF
+
+.star_container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 200px
+    height: 36px
+    font-size: 24px
+    margin-bottom: 20px
+    @include responsive('smartphone')
+        height: 18px
+        font-size: 13px
+        width: 100px
+
+    .star_red
+        color: $main-color
+
+    .star_grey
+        color: lightgrey
