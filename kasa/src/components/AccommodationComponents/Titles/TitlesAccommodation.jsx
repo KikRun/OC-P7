@@ -18,7 +18,7 @@ export default function TitlesAccommodation() {
     })
 
     return <div className="title-and-subtitle">
-        <h2>{`${actualTitle}`}</h2>
+        <h2 className="title">{`${actualTitle}`}</h2>
         <h3>{`${actualLocation}`}</h3>
     </div>
 

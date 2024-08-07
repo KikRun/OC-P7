@@ -4,20 +4,25 @@ import Titles from "../../components/AccommodationComponents/Titles/TitlesAccomm
 import User from "../../components/AccommodationComponents/User/UserAccommodation"
 import TagList from "../../components/AccommodationComponents/TagList/TagList"
 import TextCollapse from "../../components/TextCollapse/Description/TextCollapse"
-import { useParams } from "react-router-dom"
+import { Navigate, useParams, useLocation, } from "react-router-dom"
 import json from "../../json/logements.json"
 import Stars from "../../components/AccommodationComponents/Stars/Stars"
 
+
 export default function Accommodation() {
     const { id } = useParams()
-
     const accommodation = json.find((item) => item.id === id)
 
-    if (!accommodation) {
+    let location = useLocation();
 
+    if (!accommodation) {
+        console.log("wrong url")
+        console.log(accommodation)
+        console.log(location)
+        return <Navigate to="/home" state={{ from: location }} replace />
     }
 
-    return <main>
+    return (<main>
         <Banner actualPicture={accommodation.pictures} />
 
         <section className="titles">
@@ -36,5 +41,5 @@ export default function Accommodation() {
             <TextCollapse title="Description" content={accommodation.description}></TextCollapse>
             <TextCollapse title="Équipements" content={accommodation.equipments}></TextCollapse>
         </div>
-    </main>
+    </main>)
 }

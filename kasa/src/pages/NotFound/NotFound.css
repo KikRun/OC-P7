@@ -1,0 +1,70 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1240px;
+  width: 90%;
+}
+
+.error-title {
+  display: flex;
+  justify-content: center;
+  font-size: 288px;
+  font-weight: 700;
+  color: #ff6060;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  .error-title {
+    font-size: 96px;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+}
+
+.error-subtitle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+  color: #ff6060;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  .error-subtitle {
+    font-size: 18px;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+}
+
+.error-redirection {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #000;
+  /* breakpoints are viewport arbitrary values,
+  * they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+  * the breakpoints I used were inspired by Bootstrap =>
+  * https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  * */
+}
+@media only screen and (max-width: 1000px) {
+  .error-redirection {
+    font-size: 14px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+}/*# sourceMappingURL=NotFound.css.map */

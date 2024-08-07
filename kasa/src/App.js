@@ -1,6 +1,5 @@
 import "./style/App.css";
 import React from "react";
-import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home.jsx";
 import Header from "./components/Header/Header.jsx";
@@ -9,7 +8,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import "./components/Footer/Footer.css";
 import Accommodation from "./pages/Accommodation/Accommodation.jsx";
 import APropos from "./pages/APropos/APropos.jsx";
-import NotFound from "./pages/404/NotFound.jsx";
+import NotFound from "./pages/NotFound/NotFound.jsx";
 
 function App() {
   return (
