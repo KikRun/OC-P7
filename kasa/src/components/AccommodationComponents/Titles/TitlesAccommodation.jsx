@@ -10,10 +10,14 @@ export default function TitlesAccommodation() {
     let actualTitle = ""
     let actualLocation = ""
 
+
     json.map((accommodation) => {
         if (accommodation.id === actualId) {
             actualTitle = accommodation.title
             actualLocation = accommodation.location
+            return actualTitle + actualLocation
+        } else {
+            return false
         }
     })
 
@@ -21,8 +25,5 @@ export default function TitlesAccommodation() {
         <h2 className="title">{`${actualTitle}`}</h2>
         <h3>{`${actualLocation}`}</h3>
     </div>
-
-
-
-
 }
+

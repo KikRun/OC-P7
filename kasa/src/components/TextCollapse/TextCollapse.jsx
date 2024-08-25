@@ -12,7 +12,7 @@ export default function TextCollapse({ title, content }) {
                 <FontAwesomeIcon className={(IsOpen ? 'open' : null) + ' arrow'} icon={faAngleDown} />
             </div>
             <div className={(IsOpen ? 'open' : "hide") + " content"} >
-                {Array.isArray(content) ? < ul > {content.map((item) => <li>{item}</li>)} </ul> : <p >{content}</p>
+                {Array.isArray(content) ? < ul > {content.map((item, index) => <li key={index}>{item}</li>)} </ul> : <p >{content}</p>
                 }
             </div>
 

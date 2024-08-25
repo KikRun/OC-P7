@@ -1,4 +1,4 @@
-@import "../../../style/_responsive"
+@import "../../style/_responsive"
 
 $main-color: #FF6060
 $black-color: #000
@@ -44,11 +44,16 @@ h3
         font-size: 13px
 
 ul
-    padding: 20px 10px 0
+    padding: 0px 10px 0
     opacity: 1
     z-index: 1
+    @include responsive('smartphone')
+        font-size: 12px
 
 p
+    padding: 0px 10px 0 15px
+    @include responsive('smartphone')
+        font-size: 12px
 
 .content
     display: flex
@@ -57,13 +62,8 @@ p
     max-height: 300px
     height: 0
     opacity: 0
+    transition: all 200ms
 
     &.open
         height: 100%
         opacity: 1
-
-.open
-
-    transition: all 200ms
-
-    &.content

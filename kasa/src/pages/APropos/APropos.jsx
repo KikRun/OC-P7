@@ -1,5 +1,5 @@
 import imageBanner from "../../assets/IMG_header_2.png"
-import TextCollapse from "../../components/TextCollapse/Description/TextCollapse.jsx"
+import TextCollapse from "../../components/TextCollapse/TextCollapse.jsx"
 import json from "../../json/apropos.json"
 import "../APropos/APropos.css"
 

@@ -5,7 +5,7 @@ export default function TagList({ actualTags, actualId }) {
     console.log(actualId)
     return (
         <div className="category_container">
-            {actualTags.map((actualTags) => <Tag actualTag={actualTags} />)}
+            {actualTags.map((tag, index) => <Tag key={index} actualTag={tag} />)}
         </div>
     )
 }

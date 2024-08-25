@@ -8,7 +8,4 @@ export default function NotFound(props) {
             <a className="error-redirection" href="/">Retourner sur la page d’accueil</a>
         </main>
     )
-
-
-
 }

@@ -1,1 +1,1 @@
-{"version":3,"sources":["TitlesAccommodation.sass","../../../style/_responsive.sass","TitlesAccommodation.css"],"names":[],"mappings":"AAKA;EACE,aAAA;EACA,sBAAA;EACA,eAAA;EACA,gBAAA;EACA,gBAAA;EACA,cAVW;EAWX,kBAAA;EACA,aAAA;ECZA;;;;KAAA;ACaF;ADNI;EDHJ;IAUI,gBAAA;EEGF;AACF","file":"TitlesAccommodation.css"}
+{"version":3,"sources":["TitlesAccommodation.sass","TitlesAccommodation.css"],"names":[],"mappings":"AAIA;EACE,aAAA;EACA,sBAAA;EACA,eAAA;EACA,gBAAA;EACA,gBAAA;EACA,cAVW;EAWX,kBAAA;EACA,gBAAA;ACHF","file":"TitlesAccommodation.css"}
